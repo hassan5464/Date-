@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+ *{
+  box-sizing: border-box;
+}  
+@font-face {
+  font-family:  "Open Runde";
+  src: url('/fonts/OpenRunde-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family:  "Open Runde";
+  src: url('/fonts/OpenRunde-Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family:  "Open Runde"; 
+  src: url('/fonts/OpenRunde-Bold.woff') format('woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family:  "Open Runde"; 
+  src: url('/fonts/OpenRunde-Semibold.woff') format('woff'); 
+  font-weight: 700;
+}
+
+body{
+  width: 100dvw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Open Runde', sans-serif;
+}
+
+@theme{
+  --NavColor: rgba(255, 255, 255, 0.25);
+  --NavBorder: rgba(117, 115, 114, 0.15);
+  --main-color: #1A1615;
+}
+
+
+/* .nav-hover-btn {
+    @apply relative   font-medium hover:text-primary-500  text-black-400 after:absolute after:-bottom-0.5 
+    after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary-500
+      after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]
+        hover:after:origin-bottom-left active:after:bg-primary-500 
+    hover:after:scale-x-100 dark:after:bg-primary-500 cursor-pointer;
+  } */
+
+
+.hero{
+  background-image: url("./yousef2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+
+}
+
+.container{
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
